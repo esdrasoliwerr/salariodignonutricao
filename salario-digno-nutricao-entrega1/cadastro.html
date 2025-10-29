@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Participe — Cadastro</title>
+  <meta name="description" content="Formulário de participação e apoio ao movimento.">
+</head>
+<body>
+  <header>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos & Materiais</a></li>
+        <li><a href="cadastro.html" aria-current="page">Participe</a></li>
+      </ul>
+    </nav>
+    <h1>Cadastro de apoio</h1>
+  </header>
+
+  <main>
+    <form aria-describedby="priv" novalidate>
+      <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <label for="nome">Nome completo</label>
+        <input id="nome" name="nome" type="text" required autocomplete="name">
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required autocomplete="email">
+
+        <label for="cpf">CPF</label>
+        <input id="cpf" name="cpf" type="text" required
+               pattern="^\d{3}\.?\d{3}\.?\d{3}-?\d{2}$" placeholder="000.000.000-00">
+
+        <label for="telefone">Telefone</label>
+        <input id="telefone" name="telefone" type="tel" required
+               pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" placeholder="(61) 99999-9999">
+
+        <label for="nascimento">Data de nascimento</label>
+        <input id="nascimento" name="nascimento" type="date" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+
+        <label for="endereco">Endereço</label>
+        <input id="endereco" name="endereco" type="text" required autocomplete="street-address">
+
+        <label for="cep">CEP</label>
+        <input id="cep" name="cep" type="text" required
+               pattern="^\d{5}-?\d{3}$" placeholder="70000-000">
+
+        <label for="cidade">Cidade</label>
+        <input id="cidade" name="cidade" type="text" required>
+
+        <label for="estado">Estado (UF)</label>
+        <input id="estado" name="estado" type="text" required maxlength="2" placeholder="UF">
+      </fieldset>
+
+      <p id="priv">Usaremos seus dados apenas para organização do movimento.</p>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> Salário Digno Nutrição — Projeto acadêmico.</p>
+    <script>document.getElementById('ano').textContent=new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
