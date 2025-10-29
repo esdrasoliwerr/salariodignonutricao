@@ -30,13 +30,13 @@ salario-digno-nutricao/
 ├─ index.html            → Página inicial (quem somos + contato)
 ├─ projetos.html         → Projetos, campanhas e galeria
 ├─ cadastro.html         → Formulário de participação e apoio
-└─ assets/
-   └─ img/
-      ├─ logo-oficial.png
-      ├─ hero-mark-1.png
-      ├─ ato-faixa.png
-      ├─ ato-camiseta.png
-      └─ ato-corrida.png
+assets/
+ ├─ icons/
+ │   └─ logo.png
+ └─ img/
+     ├─ projeto1.png
+     ├─ projeto2.png
+     └─ projeto3.png
 </pre>
 
 
