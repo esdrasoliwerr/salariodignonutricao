@@ -46,8 +46,6 @@ salariodignonutricao/
 └─ README.md                     → Descrição geral do repositório
 </pre>
 
-
-
 ---
 
 ## 🧩 Tecnologias Utilizadas
@@ -92,6 +90,100 @@ salariodignonutricao/
 
 📧 **E-mail:** [salariodignonutricao@gmail.com](mailto:salariodignonutricao@gmail.com)  
 📸 **Instagram:** [@salariodignonutricao](https://instagram.com/salariodignonutricao)  
+
+---
+
+---
+
+## 🎨 Entrega II — Estilização e Leiautes (CSS3)
+
+Resultado da entrega II:https://esdrasoliwerr.github.io/salariodignonutricao/Entrega2/
+
+---
+
+### 🧭 Objetivo
+
+Transformar a estrutura HTML da Entrega I em uma **interface web profissional, responsiva e acessível**, aplicando os fundamentos de **CSS3**, **design system**, **flexbox** e **grid**.  
+O foco principal é a estilização, organização modular e responsividade do site.
+
+---
+
+### 🧩 Estrutura do Projeto
+<pre>
+salariodignonutricao/
+├─ docs/
+│ └─ Entrega2/
+│ ├─ index.html
+│ ├─ projetos.html
+│ ├─ cadastro.html
+│ ├─ css/
+│ │ ├─ tokens.css → Design System (cores, tipografia, espaçamento)
+│ │ ├─ base.css → Estilos base e tipografia
+│ │ ├─ layout.css → Grid 12 colunas, Flexbox e menu responsivo
+│ │ ├─ components.css → Cards, botões, formulários, badges, alertas, modal
+│ │ └─ utilities.css → Breakpoints e utilitários
+│ └─ assets/
+│ ├─ icons/logo.png
+│ └─ img/projeto1..3.png
+</pre>
+
+
+---
+
+### 🎨 Sistema de Design
+
+| Elemento | Descrição |
+|-----------|------------|
+| **Cores** | 8+ tons: roxo `#584476`, verde `#26713E`, bege `#efede1`, branco, preto, e três tons de cinza. |
+| **Tipografia** | Hierarquia com 5 tamanhos (`--fs-xxl` a `--fs-sm`). |
+| **Espaçamento modular** | 8px, 16px, 24px, 32px, 48px e 64px. |
+| **Design tokens** | Centralizados em `tokens.css` para fácil manutenção. |
+
+---
+
+### 🧱 Leiautes Responsivos
+
+- Estrutura principal em **CSS Grid (12 colunas)**.  
+- **Flexbox** aplicado em componentes internos.  
+- **Cinco breakpoints** responsivos: 1280px, 1100px, 900px, 700px, 500px.  
+- Layout **mobile-first** e totalmente adaptável a dispositivos móveis.  
+
+---
+
+### 🧭 Navegação
+
+- **Menu principal responsivo** com:
+  - Dropdown funcional (hover);
+  - Menu hambúrguer para dispositivos móveis (sem JavaScript, apenas CSS);
+  - Destaque para página ativa (`aria-current="page"`).
+
+---
+
+### 🧩 Componentes de Interface
+
+- **Cards responsivos** para exibir projetos e materiais.  
+- **Botões com estados visuais** (`hover`, `focus`, `active`, `disabled`).  
+- **Formulários estilizados** com feedback visual e foco acessível.  
+- **Badges** para categorias e tags.  
+- **Alertas e Modal** implementados 100% com CSS (`:target`).  
+
+---
+
+### ♿ Acessibilidade e Validação
+
+- Estrutura com atributos ARIA revisados.  
+- Correções validadas pelo [W3C Validator](https://validator.w3.org/nu/#file).  
+- Padrões de contraste e foco garantidos.  
+- Substituição de atributos incorretos (`aria-expanded`, `aria-label`, `street-address`) por equivalentes válidos.
+
+---
+
+### 🧠 Boas Práticas Implementadas
+
+- CSS **modularizado** e reutilizável.  
+- Arquitetura **mobile-first**.  
+- **HTML validado** conforme W3C.  
+- **Paleta e tokens centralizados**, facilitando manutenção nas próximas entregas.  
 
 ---
 
