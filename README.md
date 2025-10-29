@@ -26,18 +26,25 @@ Nesta entrega (Entrega I), foram aplicados:
 
 <pre>
 📁 Estrutura do Projeto
-salario-digno-nutricao/
-├─ index.html            → Página inicial (quem somos + contato)
-├─ projetos.html         → Projetos, campanhas e galeria
-├─ cadastro.html         → Formulário de participação e apoio
-assets/
- ├─ icons/
- │   └─ logo.png
- └─ img/
-     ├─ projeto1.png
-     ├─ projeto2.png
-     └─ projeto3.png
+salariodignonutricao/
+├─ docs/
+│   └─ Entrega1/
+│       ├─ index.html            → Página inicial (quem somos + contato)
+│       ├─ projetos.html         → Projetos, campanhas e galeria
+│       ├─ cadastro.html         → Formulário de participação e apoio
+│       ├─ README.md             → Descrição técnica da entrega
+│       └─ assets/
+│           ├─ icons/
+│           │   └─ logo.png      → Logotipo oficial do movimento
+│           └─ img/
+│               ├─ projeto1.png  → Caminhada e faixa — Dia do Nutricionista
+│               ├─ projeto2.png  → Ato em auditório — Valorização profissional
+│               └─ projeto3.png  → Camiseta do movimento — Empoderamento
+│
+├─ LICENSE
+└─ README.md                     → Descrição geral do repositório
 </pre>
+
 
 
 ---
