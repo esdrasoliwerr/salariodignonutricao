@@ -1,0 +1,75 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<title>Participe — Cadastro e Apoio | Salário Digno Nutrição</title>
+<meta name="description" content="Cadastre-se para apoiar o movimento, receber atualizações e participar das mobilizações.">
+
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/utilities.css">
+</head><body>
+
+<header class="site-header">
+  <div class="container topbar">
+    <a class="brand" href="index.html">
+      <img src="assets/icons/logo.png" alt="Logo Salário Digno Nutrição">
+      <span>Salário Digno Nutrição</span>
+    </a>
+    <input id="nav-toggle" type="checkbox" aria-label="Abrir menu">
+    <label class="menu-btn" for="nav-toggle">
+      <span></span><span></span><span></span>
+    </label>
+    <nav aria-label="Principal">
+      <ul id="menu">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li class="nav-item">
+          <a href="projetos.html">Projetos</a>
+          <div class="dropdown" role="menu">
+            <a href="projetos.html#galeria">Galeria</a>
+            <a href="projetos.html#materiais" class="hide-sm">Materiais</a>
+          </div>
+        </li>
+        <li><a href="cadastro.html">Participe</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container m-top-4">
+  <h2>Participe do movimento</h2>
+  <p class="m-top-2">Preencha o formulário para receber atualizações e contribuir com mobilizações.</p>
+  <form class="m-top-3" aria-describedby="priv">
+    <div class="grupo">
+      <div><label for="nome">Nome completo</label><input id="nome" name="nome" type="text" required autocomplete="name"></div>
+      <div><label for="email">E-mail</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+    </div>
+    <div class="grupo">
+      <div><label for="cpf">CPF</label><input id="cpf" name="cpf" type="text" required pattern="^\d3\.?\d3\.?\d3-?\d2$" placeholder="000.000.000-00"></div>
+      <div><label for="telefone">Telefone</label><input id="telefone" name="telefone" type="tel" required pattern="^\(?\d2\)?\s?\d(4, 5)-?\d4$" placeholder="(61) 99999-9999"></div>
+    </div>
+    <div class="grupo">
+      <div><label for="nascimento">Data de nascimento</label><input id="nascimento" name="nascimento" type="date" required></div>
+      <div><label for="cep">CEP</label><input id="cep" name="cep" type="text" required pattern="^\d5-?\d3$" placeholder="70000-000"></div>
+    </div>
+    <div><label for="endereco">Endereço</label><input id="endereco" name="endereco" type="text" required autocomplete="address-line1"></div>
+    <div class="grupo">
+      <div><label for="cidade">Cidade</label><input id="cidade" name="cidade" type="text" required></div>
+      <div><label for="estado">Estado</label><input id="estado" name="estado" type="text" required maxlength="2" placeholder="UF"></div>
+    </div>
+    <label style="display:flex;gap:8px;align-items:center;margin:8px 0"><input type="checkbox" name="novidades" checked> Desejo receber atualizações por e-mail</label>
+    <p id="priv" class="alert">Não solicitamos dados sensíveis. Uso exclusivo para organização do movimento.</p>
+    <div class="m-top-3"><button type="submit" class="btn primary">Enviar cadastro</button><button type="reset" class="btn outline">Limpar</button></div>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Contato: <a href="mailto:salariodignonutricao@gmail.com">salariodignonutricao@gmail.com</a> · Instagram:
+      <a target="_blank" rel="noopener" href="https://instagram.com/salariodignonutricao">@salariodignonutricao</a></p>
+    <p>© <span id="ano"></span> Salário Digno Nutrição — Projeto acadêmico (ADS)</p>
+  </div>
+  <script>document.getElementById('ano').textContent=new Date().getFullYear();</script>
+</footer>
+
+</body></html>

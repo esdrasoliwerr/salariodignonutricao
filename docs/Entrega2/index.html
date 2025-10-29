@@ -1,0 +1,79 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<title>Salário Digno Nutrição — Início</title>
+<meta name="description" content="Movimento pela valorização do nutricionista: 30h, piso e reconhecimento.">
+
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/utilities.css">
+</head><body>
+
+<header class="site-header">
+  <div class="container topbar">
+    <a class="brand" href="index.html">
+      <img src="assets/icons/logo.png" alt="Logo Salário Digno Nutrição">
+      <span>Salário Digno Nutrição</span>
+    </a>
+    <input id="nav-toggle" type="checkbox" aria-label="Abrir menu">
+    <label class="menu-btn" for="nav-toggle">
+      <span></span><span></span><span></span>
+    </label>
+    <nav aria-label="Principal">
+      <ul id="menu">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li class="nav-item">
+          <a href="projetos.html">Projetos</a>
+          <div class="dropdown" role="menu">
+            <a href="projetos.html#galeria">Galeria</a>
+            <a href="projetos.html#materiais" class="hide-sm">Materiais</a>
+          </div>
+        </li>
+        <li><a href="cadastro.html">Participe</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container grid grid-12">
+    <div class="col-6">
+      <h1>Comunidade pela valorização do nutricionista</h1>
+      <p class="m-top-2">💜 Movimento pela valorização do nutricionista · ⚖️ 30h e piso salarial digno · ✊🏼 Mobilização, informação e resistência</p>
+      <div class="badges m-top-2">
+        <span class="badge">#JuntosSomosMaisFortes</span><span class="badge alt">30h Já</span><span class="badge">Piso Digno</span>
+      </div>
+      <div class="m-top-3">
+        <a class="btn primary" href="projetos.html#galeria">Ver projetos</a>
+        <a class="btn outline" href="cadastro.html">Assinar & Participar</a>
+      </div>
+      <div class="alert m-top-3" role="status">Novo: confira os materiais oficiais e participe do e‑Cidadania.</div>
+      <p class="m-top-3"><a href="#abrir-modal" class="btn outline">Ver código de conduta</a></p>
+    </div>
+    <div class="col-6 center">
+      <img src="assets/icons/logo.png" alt="Selo do movimento" style="width:min(90%,520px);margin-inline:auto">
+    </div>
+  </div>
+</section>
+
+<div id="abrir-modal" class="modal">
+  <a href="#" class="modal-backdrop" aria-label="Fechar modal"></a>
+  <div class="modal__inner" role="dialog" aria-modal="true" aria-labelledby="titulo-modal">
+    <h2 id="titulo-modal">Código de Conduta</h2>
+    <p class="m-top-2">Respeito, inclusão e transparência. Este projeto é colaborativo e apartidário.</p>
+    <a href="#" class="btn primary modal__close">Entendi</a>
+  </div>
+</div>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Contato: <a href="mailto:salariodignonutricao@gmail.com">salariodignonutricao@gmail.com</a> · Instagram:
+      <a target="_blank" rel="noopener" href="https://instagram.com/salariodignonutricao">@salariodignonutricao</a></p>
+    <p>© <span id="ano"></span> Salário Digno Nutrição — Projeto acadêmico (ADS)</p>
+  </div>
+  <script>document.getElementById('ano').textContent=new Date().getFullYear();</script>
+</footer>
+
+</body></html>

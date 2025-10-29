@@ -1,0 +1,9 @@
+
+:root{
+  --roxo:#584476; --roxo-300:#7E5CA4; --verde:#26713E; --verde-300:#4E9B61;
+  --bege:#efede1; --preto:#1f1630; --branco:#fff; --cinza-100:#F7F7F8; --cinza-200:#EAEAF0; --cinza-300:#D9D9E0;
+  --fs-xxl: clamp(40px, 6vw, 64px); --fs-xl: clamp(28px, 4.5vw, 48px); --fs-lg: clamp(22px, 3.5vw, 32px);
+  --fs-md: 20px; --fs-sm: 16px; --fs-xs: 14px;
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:48px; --s6:64px;
+  --radius:16px; --shadow:0 4px 16px rgba(0,0,0,.08); --w-container: 1200px;
+}

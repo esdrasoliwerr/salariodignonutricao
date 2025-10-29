@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<title>Projetos & Materiais — Salário Digno Nutrição</title>
+<meta name="description" content="Acompanhe projetos de lei, campanhas, materiais e ações realizadas.">
+
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/utilities.css">
+</head><body>
+
+<header class="site-header">
+  <div class="container topbar">
+    <a class="brand" href="index.html">
+      <img src="assets/icons/logo.png" alt="Logo Salário Digno Nutrição">
+      <span>Salário Digno Nutrição</span>
+    </a>
+    <input id="nav-toggle" type="checkbox" aria-label="Abrir menu">
+    <label class="menu-btn" for="nav-toggle">
+      <span></span><span></span><span></span>
+    </label>
+    <nav aria-label="Principal">
+      <ul id="menu">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li class="nav-item">
+          <a href="projetos.html">Projetos</a>
+          <div class="dropdown" role="menu">
+            <a href="projetos.html#galeria">Galeria</a>
+            <a href="projetos.html#materiais" class="hide-sm">Materiais</a>
+          </div>
+        </li>
+        <li><a href="cadastro.html">Participe</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container m-top-4">
+  <article class="card">
+    <h2>PL 6819/2010 — 30h semanais</h2>
+    <p class="m-top-2">Fortaleça a tramitação e a mobilização em defesa da saúde, das condições de trabalho e da valorização do nutricionista.</p>
+    <div class="m-top-3">
+      <a class="btn primary" target="_blank" rel="noopener" href="https://www.camara.leg.br/proposicoesWeb/fichadetramitacao/?idProposicao=2197328">Ver tramitação</a>
+      <a class="btn outline" target="_blank" rel="noopener" href="https://www12.senado.leg.br/ecidadania">Participar no e‑Cidadania</a>
+    </div>
+    <div class="badges m-top-3">
+      <span class="badge">Transparência</span><span class="badge alt">Ação Legislativa</span>
+    </div>
+  </article>
+
+  <section id="galeria" class="m-top-4">
+    <h2>Galeria — Mobilizações recentes</h2>
+    <div class="gallery m-top-2">
+      <figure><img src="assets/img/projeto1.png" alt="31 de agosto — caminhada e faixa na Esplanada"><figcaption>31 de agosto — caminhada e faixa na Esplanada</figcaption></figure>
+      <figure><img src="assets/img/projeto2.png" alt="Ato em auditório — valorização do nutricionista"><figcaption>Ato em auditório — valorização do nutricionista</figcaption></figure>
+      <figure><img src="assets/img/projeto3.png" alt="Camiseta do movimento — empoderamento e resistência"><figcaption>Camiseta do movimento — empoderamento e resistência</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="materiais" class="m-top-4">
+    <h2>Materiais e Formulários</h2>
+    <div class="cards m-top-2">
+      <div class="card"><h3>Tramitação (Câmara)</h3><p class="m-top-2"><a target="_blank" rel="noopener" href="https://www.camara.leg.br/proposicoesWeb/fichadetramitacao/?idProposicao=2197328">Abrir link oficial</a></p></div>
+      <div class="card"><h3>e‑Cidadania (Senado)</h3><p class="m-top-2"><a target="_blank" rel="noopener" href="https://www12.senado.leg.br/ecidadania">Participar</a></p></div>
+      <div class="card"><h3>Pesquisa — Relatos trabalhistas</h3><p class="m-top-2"><a target="_blank" rel="noopener" href="https://docs.google.com/forms/d/e/1FAIpQLSd2K9eDzyOg3VnUYeqqZPzEZNSnw24B0TpBGo-D8cEnUlzynA/viewform">Responder formulário</a></p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>Contato: <a href="mailto:salariodignonutricao@gmail.com">salariodignonutricao@gmail.com</a> · Instagram:
+      <a target="_blank" rel="noopener" href="https://instagram.com/salariodignonutricao">@salariodignonutricao</a></p>
+    <p>© <span id="ano"></span> Salário Digno Nutrição — Projeto acadêmico (ADS)</p>
+  </div>
+  <script>document.getElementById('ano').textContent=new Date().getFullYear();</script>
+</footer>
+
+</body></html>

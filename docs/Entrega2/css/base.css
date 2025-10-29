@@ -1,0 +1,11 @@
+
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;color:var(--preto);background:var(--bege);line-height:1.7;font-size:var(--fs-sm)}
+img{max-width:100%;display:block}
+a{color:var(--roxo);text-decoration:none} a:hover{text-decoration:underline}
+.container{width:min(92%, var(--w-container));margin-inline:auto}
+h1,h2,h3{letter-spacing:.3px;line-height:1.2;margin:0}
+h1{font-size:var(--fs-xxl);color:var(--roxo);font-weight:900}
+h2{font-size:var(--fs-xl);color:var(--roxo)}
+h3{font-size:var(--fs-lg);color:var(--verde)}
+.visually-hidden{position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap;}
