@@ -3,6 +3,7 @@
 📘 Disciplina: Front-End — Análise e Desenvolvimento de Sistemas
 
 ---
+Resultado da entrega I: https://esdrasoliwerr.github.io/salariodignonutricao/Entrega1/
 
 ## 🧭 Visão Geral
 
