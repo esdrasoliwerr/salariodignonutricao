@@ -281,4 +281,110 @@ SPA leve, mantendo a compatibilidade com o HTML original;
 Estrutura preparada para a Entrega IV (versionamento, acessibilidade e deploy).
 
 ---
-##  Entrega IV
+# Entrega IV — Versionamento, Acessibilidade e Deploy
+
+**Resultado da Entrega IV:** (https://esdrasoliwerr.github.io/salariodignonutricao/Entrega4/)
+
+---
+
+## Objetivo
+
+A Entrega IV consolida o projeto ao aplicar práticas profissionais de versionamento com Git/GitHub, diretrizes de acessibilidade baseadas na WCAG 2.1 Nível AA, otimização para ambiente de produção e documentação técnica.  
+O foco desta etapa é demonstrar maturidade no ciclo completo de desenvolvimento front-end: estruturação, estilização, interatividade, acessibilidade, versionamento e publicação.
+
+---
+
+## Controle de Versão (Git/GitHub)
+
+O projeto adotou uma estratégia baseada no modelo GitFlow, organizada da seguinte forma:
+
+- Branches utilizadas:
+  - `main`
+  - `develop`
+  - `feature/entrega1`
+  - `feature/entrega2`
+  - `feature/entrega3`
+  - `feature/entrega4`
+  - `release/v1.0.0`
+
+- Histórico de commits utilizando convenção semântica:
+  - `feat`: inclusão de novas funcionalidades
+  - `fix`: correções
+  - `docs`: ajustes em documentação
+  - `refactor`: melhorias internas
+  - `style`: ajustes visuais e de formatação
+
+- Releases utilizando versionamento semântico:
+  - `v1.0.0` – Estrutura HTML
+  - `v1.1.0` – Estilização CSS
+  - `v1.2.0` – SPA e validação
+  - `v1.3.0` – Acessibilidade, minificação e deploy
+
+---
+
+## Acessibilidade (WCAG 2.1 – Nível AA)
+
+As seguintes diretrizes de acessibilidade foram aplicadas:
+
+- Navegação completa por teclado em todos os componentes do site;
+- Estrutura semântica adequada com uso de elementos nativos (`header`, `nav`, `main`, `section`, `footer`);
+- Foco visível em links, botões, itens de menu e campos de formulários;
+- Implementação de atributos ARIA compatíveis com leitores de tela, incluindo `aria-live`, `aria-invalid` e `aria-pressed`;
+- Garantia de contraste mínimo 4.5:1 para texto e elementos interativos;
+- Implementação de modo escuro e versão de alto contraste, com acionamento via botões acessíveis;
+- Revisão completa no W3C Validator com correções de atributos inválidos e estrutura HTML.
+
+---
+
+## Otimização para Produção
+
+Foram aplicadas práticas de otimização do projeto, incluindo:
+
+- Minificação de arquivos HTML, CSS e JavaScript, gerando versões compactas (`*.min.*`);
+- Redução de espaços, quebras de linha e elementos redundantes;
+- Compressão de imagens e vídeos;
+- Revisão da estrutura de carregamento de arquivos para melhorar desempenho.
+
+---
+
+## Deploy
+
+A estrutura foi preparada para publicação no GitHub Pages, seguindo o padrão da disciplina:
+
+```
+docs/
+ └── Entrega4/
+      ├── index.html
+      ├── css/
+      ├── js/
+      ├── assets/
+      └── versões minificadas dos arquivos
+```
+
+A entrega final funciona de forma independente, preservando responsividade, acessibilidade e interatividade.
+
+---
+
+## Documentação Técnica
+
+O repositório contém documentação completa, incluindo:
+
+- README estruturado apresentando:
+  - resumo das quatro entregas do projeto;
+  - tecnologias utilizadas;
+  - descrição da arquitetura;
+  - justificativas técnicas;
+  - explicação do fluxo de versionamento;
+  - links para cada entrega.
+
+- Issues e milestones criadas para registrar processos, melhorias e ajustes;
+
+- Pull Requests simulados conforme exigência da atividade.
+
+---
+
+## Conclusão
+
+A Entrega IV finaliza o ciclo de desenvolvimento consolidando práticas de versionamento profissional, acessibilidade conforme WCAG 2.1 AA, otimizações para produção e documentação adequada.  
+Com esta entrega, o projeto alcança completude técnica, coerência estrutural e maturidade necessária para publicação.
+
