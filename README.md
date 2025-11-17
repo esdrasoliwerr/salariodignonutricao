@@ -294,34 +294,6 @@ O foco desta etapa é demonstrar maturidade no ciclo completo de desenvolvimento
 
 ---
 
-## Controle de Versão (Git/GitHub)
-
-O projeto adotou uma estratégia baseada no modelo GitFlow, organizada da seguinte forma:
-
-- Branches utilizadas:
-  - `main`
-  - `develop`
-  - `feature/entrega1`
-  - `feature/entrega2`
-  - `feature/entrega3`
-  - `feature/entrega4`
-  - `release/v1.0.0`
-
-- Histórico de commits utilizando convenção semântica:
-  - `feat`: inclusão de novas funcionalidades
-  - `fix`: correções
-  - `docs`: ajustes em documentação
-  - `refactor`: melhorias internas
-  - `style`: ajustes visuais e de formatação
-
-- Releases utilizando versionamento semântico:
-  - `v1.0.0` – Estrutura HTML
-  - `v1.1.0` – Estilização CSS
-  - `v1.2.0` – SPA e validação
-  - `v1.3.0` – Acessibilidade, minificação e deploy
-
----
-
 ## Acessibilidade (WCAG 2.1 – Nível AA)
 
 As seguintes diretrizes de acessibilidade foram aplicadas:
@@ -376,10 +348,6 @@ O repositório contém documentação completa, incluindo:
   - justificativas técnicas;
   - explicação do fluxo de versionamento;
   - links para cada entrega.
-
-- Issues e milestones criadas para registrar processos, melhorias e ajustes;
-
-- Pull Requests simulados conforme exigência da atividade.
 
 ---
 
