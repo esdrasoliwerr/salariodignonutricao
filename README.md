@@ -187,4 +187,98 @@ salariodignonutricao/
 
 ---
 
+---
+##  Entrega III — Interatividade e Funcionalidades (JavaScript)
 
+Resultado da entrega III: https://esdrasoliwerr.github.io/salariodignonutricao/Entrega3/
+
+---
+### Objetivo
+
+Implementar interatividade na plataforma utilizando JavaScript modular, criando uma SPA básica, manipulando o DOM e adicionando validação avançada ao formulário de cadastro com feedback ao usuário.
+
+---
+### Funcionalidades Implementadas
+🔁 Single Page Application (SPA)
+
+Navegação dinâmica entre páginas sem recarregar todo o site;
+
+Apenas o conteúdo central é substituído, mantendo header e footer;
+
+Uso da History API (pushState / popstate) para navegação fluida;
+
+Sistema de templates JavaScript para carregar e armazenar conteúdos das páginas:
+
+index.html
+
+projetos.html
+
+cadastro.html
+
+---
+###  Validação Avançada do Formulário
+
+Arquivo: js/forms.js
+
+Além da validação nativa do HTML5, foram aplicadas regras de consistência:
+
+Verificação de nome completo (nome + sobrenome);
+
+CPF válido (11 dígitos + bloqueio de repetições);
+
+Telefone com DDD (10–11 dígitos);
+
+CEP com 8 dígitos;
+
+UF com sigla de 2 letras.
+
+---
+###  Feedback ao usuário
+
+Resumo de erros exibido no topo do formulário;
+
+Mensagens específicas abaixo dos campos inválidos;
+
+Campos incorretos marcados com aria-invalid="true";
+
+Foco automático no primeiro erro (acessibilidade).
+
+---
+### JavaScript Modular
+<pre>
+Entrega3/
+├─ js/
+│  ├─ spa.js      → Navegação, templates e rotas
+│  └─ forms.js    → Regras de validação e mensagens de erro
+</pre>
+
+Separação clara de responsabilidades (SPA × Validação);
+
+DOM manipulado diretamente (sem bibliotecas);
+
+Funcionamento garantido mesmo sem JavaScript (progressive enhancement).
+
+---
+### Acessibilidade na Interatividade
+
+Uso de aria-live="assertive" nas mensagens dinâmicas;
+
+Campos inválidos marcados com aria-invalid="true";
+
+Foco aplicado automaticamente para navegação por teclado;
+
+Mensagens compatíveis com leitores de tela.
+
+---
+### Boas Práticas Implementadas
+
+Progressive enhancement aplicado corretamente;
+
+Código modular, limpo e reutilizável;
+
+SPA leve, mantendo a compatibilidade com o HTML original;
+
+Estrutura preparada para a Entrega IV (versionamento, acessibilidade e deploy).
+
+---
+##  Entrega IV
