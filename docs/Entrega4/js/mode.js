@@ -1,0 +1,39 @@
+// Toggle de modo claro, escuro e alto contraste com acessibilidade e persistência
+function applyMode(mode) {
+  document.body.classList.remove('dark-mode', 'high-contrast', 'light-mode');
+
+  if (mode === 'dark') document.body.classList.add('dark-mode');
+  if (mode === 'contrast') document.body.classList.add('high-contrast');
+  if (mode === 'light') document.body.classList.add('light-mode');
+
+  // Atualiza estado aria-pressed nos botões
+  const buttons = document.querySelectorAll('.theme-btn');
+  buttons.forEach(btn => btn.setAttribute('aria-pressed', 'false'));
+
+  const activeBtn = document.querySelector('.theme-btn.' + mode);
+  if (activeBtn) {
+    activeBtn.setAttribute('aria-pressed', 'true');
+  }
+}
+
+function setMode(mode) {
+  applyMode(mode);
+  try {
+    localStorage.setItem('sdn-theme', mode);
+  } catch (e) {
+    // armazenamento pode não estar disponível; ignora
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  let initial = 'light';
+  try {
+    const saved = localStorage.getItem('sdn-theme');
+    if (saved === 'dark' || saved === 'contrast' || saved === 'light') {
+      initial = saved;
+    }
+  } catch (e) {
+    initial = 'light';
+  }
+  applyMode(initial);
+});
